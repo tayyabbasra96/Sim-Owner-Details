@@ -87,7 +87,7 @@ fun ShowResultScreen(navController: NavController) {
                     .fillMaxSize()
                     .padding(it)
             ) {
-                NativeAdView(adUnitId = LocalContext.current.getString(R.string.admob_native_id))
+//                NativeAdView(adUnitId = LocalContext.current.getString(R.string.admob_native_id))
                 LazyColumn(
                     modifier = Modifier
                         .fillMaxSize() // Ensures scroll works

@@ -28,10 +28,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.webview.WebViewActivity"
-            android:exported="false" />
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"

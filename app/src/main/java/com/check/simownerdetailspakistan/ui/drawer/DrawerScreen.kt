@@ -199,7 +199,7 @@ fun DrawerScreen(navController: NavController) {
                     verticalArrangement = Arrangement.SpaceAround,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    NativeAdView(adUnitId = LocalContext.current.getString(R.string.admob_native_id))
+//                    NativeAdView(adUnitId = LocalContext.current.getString(R.string.admob_native_id))
                     HomeScreen(navController)
 
                 }

@@ -78,7 +78,7 @@ fun CheckSimScreen(viewModel:MainViewModel,navController: NavController) {
                if (isShowData){
 
                    navController.currentBackStackEntry?.savedStateHandle?.apply {
-                       set("name", credentials.referenceNumber)
+                       set("name", refNumber)
                        set("userList", apiResponse?.data?.records ?: arrayListOf())
                    }
                    navController.navigate(AppScreen.ShowResultScreen.route)
@@ -126,7 +126,7 @@ fun FormSection(viewModel: MainViewModel) {
     Column(
         modifier = Modifier.padding(0.dp)
     ) {
-        NativeAdView(adUnitId = context.getString(R.string.admob_native_id))
+//        NativeAdView(adUnitId = context.getString(R.string.admob_native_id))
         Text(
             text = "  📱 Enter Phone Number or 🆔 CNIC:",
             fontSize = 16.sp,

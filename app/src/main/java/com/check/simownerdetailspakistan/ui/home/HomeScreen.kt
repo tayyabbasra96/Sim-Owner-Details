@@ -44,7 +44,6 @@ import coil.compose.AsyncImage
 import com.check.simownerdetailspakistan.R
 import com.check.simownerdetailspakistan.Utils.AdsHandling
 import com.check.simownerdetailspakistan.ui.theme.Green
-import com.check.simownerdetailspakistan.ui.webview.WebViewActivity
 import com.check.simownerdetailspakistan.business.domain.model.ItemList
 import com.check.simownerdetailspakistan.ui.checksim.CheckSimScreen
 import com.check.simownerdetailspakistan.ui.main.MainViewModel
@@ -55,13 +54,8 @@ import com.check.simownerdetailspakistan.ui.navigation.AppScreen
 @Composable
 fun HomeScreen(navController: NavController) {
     var itemList: ArrayList<ItemList> = arrayListOf()
-    itemList.add(ItemList(1,"Check by Phone Number",R.drawable.icon,"https://echallanpunjab.com/e-challan-check"))
-    itemList.add(ItemList(2,"Check by CNIC",R.drawable.icon,"https://echallanpunjab.com/e-challan-check"))
-//    itemList.add(ItemList(3,"Owner Criminal Record",R.drawable.icon,"https://echallanpunjab.com/e-challan-check"))
-//    itemList.add(ItemList(4,"Vehicle verification",R.drawable.vehicle_verification,"https://mtmis.com.pk/"))
-//    itemList.add(ItemList(5,"Driving license verification",R.drawable.licence_icon,"https://dlims.net/"))
-//
-    val context = LocalContext.current
+    itemList.add(ItemList(1,"Check by Phone Number",R.drawable.icon,""))
+    itemList.add(ItemList(2,"Check by CNIC",R.drawable.icon,""))
     val activity = (LocalContext.current as? Activity)
     val lazyGridState = rememberLazyGridState()
     LazyVerticalGrid(
@@ -91,10 +85,10 @@ fun HomeScreen(navController: NavController) {
                         popUpTo(AppScreen.CherSimScreen.route) { inclusive = false }
                         launchSingleTop = true
                     }
-                    activity?.let {
-                        AdsHandling.getInstance().showInterstitialAds(activity = activity)
-
-                    }
+//                    activity?.let {
+//                        AdsHandling.getInstance().showInterstitialAds(activity = activity)
+//
+//                    }
 
                 }
             ) {
@@ -131,15 +125,6 @@ fun HomeScreen(navController: NavController) {
                         lineHeight = 20.sp
                     )
                     Spacer(modifier = Modifier.height(6.dp))
-
-//                    Text(
-//                        text = itemList[item].description, modifier = Modifier
-//                            .fillMaxWidth()
-//                            .wrapContentSize()
-//                            .padding(end = 12.dp, start = 12.dp),
-//                      style = TextStyle,
-//                    )
-
 
                 }
 
