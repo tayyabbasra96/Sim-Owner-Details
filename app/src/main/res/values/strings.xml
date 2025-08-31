@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Sim Owner Details</string>
+    <string name="disclaimer">This Application is developed for users to get all helpful and important links, information and help at one place. This app is NOT an official app for any Administrative; neither this app is related to any Administrative department. This app is not associated or affiliated directly or indirectly to the administrative body. The verification information presented in this application is taken directly from other public domain. App will not responsible if any wrong information provided. Also we do not own any content shown in this app. This application assumes no liability or responsibility for any errors or omissions in the content thus displayed and it does not reflect the genuineness of the vehicle or its documents or information. Author of this application are not any legal liability for anything that may be wrong with it. We are not taking any money or we are not responsible for any kind of transaction fail or success or any kind of payment related issue. . This is completely FREE application, ENJOY. For any privacy or copyrights related issues please mail us at: h.akram7891@gmail.com</string>
+
+<!--    Admob test ad id's-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_app_open">ca-app-pub-3940256099942544/3419835294</string>
+
+<!--        live ads-->
+
+<!--                    <string name="app_id">ca-app-pub-2327524705515990~6816534916</string>-->
+<!--                    <string name="admob_interstitial">ca-app-pub-2327524705515990/8586989579</string>-->
+<!--                    <string name="admob_native_id">ca-app-pub-2327524705515990/7961128022</string>-->
+<!--                    <string name="admob_app_open">ca-app-pub-2327524705515990/8811448331</string>-->
+
+
 </resources>
